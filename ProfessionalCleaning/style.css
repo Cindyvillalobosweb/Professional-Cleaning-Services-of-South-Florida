@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+h3 {
+    font-size: 44px;
+    line-height: 55px;
+    color: #121212;
+    font-weight: 600;
+}
+
+h6{
+    font-size: 20px;
+    line-height: 32px;
+    color: #6c6c6c;
+    margin-top: 16px;
+    font-weight: normal;
+}
+
+.main-btn {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    padding: 0 32px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #0067f4;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out 0s;
+    z-index: 5;
+}
+
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: transparent;
+    transition: all 0.5s ease;
+    z-index: 100000;
+}
+
+
+.nav .navbar-toggler{
+    display: none;
+    border: none;
+    outline: none;
+}
+
+.nav .navbar-toggler .toggler-icon{
+    width: 27px;
+    height: 3px;
+    background-color: #121212;
+    margin: 5px 0;
+    position: relative;
+    display: block;
+    transition: all 0.3s ease-out 0s;
+}
+
+.nav .menu-bar .menu-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .menu-bar .menu-items li{
+    margin: 0 15px;
+}
+
+.nav .menu-bar .menu-items li a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav .menu-bar .menu-items li a:hover{
+    color: #1BBDFF;
+}
+
+.back{
+    background-image: url(assets/Images/vacuum2.jpg);
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+} 
+
+.back .overlay{
+    background-image: linear-gradient(rgba(232, 237, 255, 0.3), rgba(239,254,255,0.3), rgba(48, 223, 255, 0.3));
+    width: 100%;
+    height: 100%;
+}
+
+.back .hero-shape{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.back .hero-shape img{
+    width: 100%;
+    display: block;
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text h6{
+    color: #1d1d1d;
+}
+
+.hero-text .header-btn{
+    margin-top: 22px;
+}
+
+.hero-text .header-btn li{
+    display: inline-block;
+    margin: 10px 10px 0 0;
+}
+
+.hero-text .header-btn li a.main-btn{
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 0;
+    line-height: 50px;
+    box-shadow: 0 5px 7px 0 rgba(0,0,0,0.16);
+}
+
+.hero-text .header-btn .btn-one{
+    color: rgb(0, 0, 0);
+}
+
+.hero-text .header-btn .btn-one::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #1BBDFF, #bdffff ) ;
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-position: right center;
+}
+
+.hero-text .header-btn .btn-one:hover::before{
+    background-image: linear-gradient(to left, #1BBDFF, #bdffff);
+    background-position: left center;
+}
+
+/* Residential Services */
+#wrapper {
+    margin: 5rem 7rem 30rem 7rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.service h6 {
+    margin-bottom: 6rem;
+}
+
+.service .service-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service .service-content .box {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service .service-content .box .box-one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service .service-content .box .box-one .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.service .service-content .box .box-one .services i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #535CF1;
+}
+
+.service .service-content .box .box-one .services .services-content {
+    text-align: justify;
+}
+
+.service .service-content .service-img {
+    width: 40%;
+}
+
+.service .service-content .service-img img {
+    width: 100%;
+}
+
+
+/* Commercial Services */
+/* Quote  */
+/* Call to action */
+
+.callToAct{
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #bdffff), url(assets/Images/pressurewasher.jpg);
+    min-height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.callToAct .parallax{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+
+.callToAct .parallax h3, .callToAct .parallax p {
+color: #fff;
+}
+
+.callToAct .parallax p {
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.callToAct .parallax .call-news{
+    background-color: #fff;
+    max-width: 450px;
+    margin: auto;
+    border-radius: 50px;
+    padding: 12px 0 12px 15px;
+    position: relative;
+}
+
+.callToAct .parallax .call-news i{
+    color: #535CF1;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.callToAct .parallax .call-news input{
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.callToAct .parallax .call-news button{
+    background-image: linear-gradient(to right, #1BBDFF, #bdffff );
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+
+/* Contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.contact .form{
+    width: 50%;
+}
+
+.contact .form .first-row, .contact .form .first-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px 0;
+}
+
+.contact .form .first-row input, .contact .form .first-row input{
+    width: 47%;
+    height: 56px;
+    border: 1px solid #cbced1;
+    border-radius: 5px;
+    padding: 0 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact .form textarea{
+    width: 100%;
+    resize: none;
+    border: 1px solid #cbced1;
+    border-radius: 5px;
+    padding: 0 25px;
+    font-size: 16px;
+    outline: none;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    padding: 15px;
+}
+
+.contact .form .header-btn{
+    margin: 2rem auto;
+    width: 170px;
+}
+
+.contact .form .header-btn a{
+    background-image: linear-gradient(to right, #1BBDFF, #1BBDFF );
+    border:none;
+    color: #fff;
+}
+
+/* Footer */
+footer{
+background-color: #F4F6F7;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 35%;
+}
+
+
+
+@media only screen and (max-width: 946px){
+
+    .nav{
+        padding: 1rem 3rem;
+    }
+
+    .hero-text{
+        width: 60%;
+    }
+
+    
+    .hero-text h6{
+        color: #1d1d1d;
+    }
+    
+    .hero-text .header-btn{
+        margin-top: 22px;
+    }
+    
+    .hero-text .header-btn li{
+        display: inline-block;
+        margin: 10px 10px 0 0;
+    }
+    
+    .hero-text .header-btn li a.main-btn{
+        border-radius: 50px;
+        overflow: hidden;
+        background-color: #fff;
+        border: 0;
+        line-height: 50px;
+        box-shadow: 0 5px 7px 0 rgba(0,0,0,0.16);
+    }
+    
+    .hero-text .header-btn .btn-one{
+        color: rgb(0, 0, 0);
+    }
+
+    #wrapper {
+        margin: 3rem 3rem 30rem 3rem;
+    }
+    
+    .service {
+        margin-bottom: 3rem;
+    }
+    
+    .service h6 {
+        margin-bottom: 3rem;
+    }
+    
+    .service .service-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    .service .service-content .box {
+        width: 100%;
+    
+    }
+    
+    .service .service-content .box .box-one {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .service .service-content .service-img {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    
+    .callToAct{
+        margin-bottom: 5rem;
+    }
+    
+    .callToAct .parallax{
+        width: 80%;
+    }
+    
+    .contact .form{
+        width: 80%;
+    }
+    
+
+
+@media only screen and (max-width: 774px){
+    .nav{
+        padding: 0.7rem 1rem;
+    }
+
+    .nav .navbar-toggler{
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 16px;
+        z-index: 1000000;
+    }
+
+    .nav .menu-bar{
+        position: fixed;
+        top: 55px;
+        right: -360px;
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(256, 256, 256, 0.9);
+        transition: all 0.6s ease;
+    }
+    
+    
+    .nav .menu-bar .menu-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+        padding: 40px 0;
+    }
+    
+    .nav .menu-bar .menu-items li{
+        margin: 2rem 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 541px){
+
+    a img{
+        width: 80px;
+        height: 80px;
+    }
+    .hero-text h3{
+        font-size: 28px;
+        line-height: 45px;
+    }
+    .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+        margin-bottom: 10rem;
+    }
+    
+    .service h6 {
+        margin-bottom: 6rem;
+        text-align: justify;
+    }
+    
+
+    .service .service-content .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .service .service-content .box .box-one {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .callToAct .parallax h3{
+        font-size: 28px;
+        line-height: 45px;
+        align-items: center;
+    }
+
+    .callToAct .parallax .call-news{
+        width: 300px;
+        height: 55px;
+        padding: 12px 0 12px 0;
+        display: block;
+        align-items: center;
+    }
+
+    .callToAct .parallax .call-news button{
+        font-size: 13px;
+        position: relative;
+        margin: 35px 0 0 0;
+        background: #fff;
+        color: #1BBDFF;
+    }
+    
+    
+    .service .service-content .service-img {
+        width: 100%;
+    }
+    
+    .service .service-content .service-img img {
+        width: 100%;
+    }
+   
+} 
+
+@media only screen and (min-width: 1670px){
+    #wrapper {
+      max-width: 70%;
+      margin: auto;
+    }
+}}
